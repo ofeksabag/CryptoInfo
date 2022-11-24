@@ -138,6 +138,7 @@ $(() => {
 
         const chart = new CanvasJS.Chart("reports", options);
         $(".reports").css("display", "block");
+        chart.render();
 
         function toggleDataSeries(e) {
             if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
@@ -145,7 +146,6 @@ $(() => {
             } else {
                 e.dataSeries.visible = true;
             }
-            e.chart.render();
         }
     }
 
