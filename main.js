@@ -154,7 +154,7 @@ $(() => {
     }
 
     async function displayCurrenciesLink() {
-        const coins = await getJson("https://api.coingecko.com/api/v3/coins");
+        const coins = await getJson("https://api.coingecko.com/api/v3/coins/");
 
         displayCoins(coins);
     }
